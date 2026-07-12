@@ -121,7 +121,7 @@ pub fn friendly_error(err: &str, meta: &ConnectionMeta) -> String {
 
 /// Quotes a SQL identifier (schema, table, column name).
 pub fn quote_ident(ident: &str) -> String {
-    format!("\"{}\"", ident.replace('\"', "\"\""))
+    format!("\"{}\"", ident.replace('"', "\"\""))
 }
 
 #[cfg(test)]
