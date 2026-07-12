@@ -215,7 +215,9 @@ pub async fn get_table_page(
 
     let col_rows = client
         .query(
-            "SELECT column_name, data_type FROM information_schema.columns\n             WHERE table_schema = $1 AND table_name = $2\n             ORDER BY ordinal_position",
+            "SELECT column_name, data_type FROM information_schema.columns
+             WHERE table_schema = $1 AND table_name = $2
+             ORDER BY ordinal_position",
             &[&schema, &table],
         )
         .await
