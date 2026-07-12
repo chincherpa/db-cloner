@@ -8,3 +8,5 @@ src-tauri/pg-tools/*
 !src-tauri/pg-tools/README.md
 *.local
 .DS_Store
+pnpm-lock.yaml
+src-tauri/Cargo.lock
