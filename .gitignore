@@ -1,0 +1,10 @@
+node_modules
+dist
+src-tauri/icons
+.tauri-icon.png
+src-tauri/target
+src-tauri/gen
+src-tauri/pg-tools/*
+!src-tauri/pg-tools/README.md
+*.local
+.DS_Store

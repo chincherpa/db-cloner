@@ -1,0 +1,31 @@
+{
+  "name": "db-cloner",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Supabase database backup desktop app",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "ensure-icons": "node scripts/ensure-icons.mjs",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "tauri": "tauri"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.9.0",
+    "@tauri-apps/plugin-dialog": "~2.4.0",
+    "@tauri-apps/plugin-notification": "~2.3.1",
+    "@tauri-apps/plugin-opener": "~2.5.0"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^5.0.3",
+    "@tailwindcss/vite": "^4.1.0",
+    "@tauri-apps/cli": "^2.9.0",
+    "svelte": "^5.20.0",
+    "svelte-check": "^4.1.0",
+    "tailwindcss": "^4.1.0",
+    "typescript": "~5.7.0",
+    "vite": "^6.2.0"
+  }
+}
